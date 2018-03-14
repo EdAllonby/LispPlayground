@@ -43,12 +43,6 @@
 (defun select (selector-fn)
   (remove-if-not selector-fn *db*))
 
-(defun artist-selector (artist)
-   #'(lambda (cd) (equal (getf cd :artist) artist)))
-
-(defun select-all-artists (artist-name)
-  (select (artist-selector artist-name)))
-
 (defun make-comparison-expr (field value)
   `(equal (getf cd ,field) ,value))
 

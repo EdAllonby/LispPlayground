@@ -1,3 +1,6 @@
+;;;; Example from chapter 3 of Practical Common Lisp
+;;;; Source: http://www.gigamonkeys.com/book/practical-a-simple-database.html
+
 (defvar *db* nil)
 
 (defun make-cd (title artist rating ripped)
